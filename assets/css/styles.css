@@ -99,3 +99,7 @@
 .plan-card .plan-section ul{margin:4px 0 0;padding-left:15px;font-size:clamp(10px,.78vw,11.5px);line-height:1.42}
 .plan-card .plan-section li{margin:3px 0}
 .plan-card .plan-section li b{color:#e1f2ef}
+
+
+/* Link to the supplementary legal reference page */
+.legal-page-link{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;border:1px solid rgba(66,214,193,.28);border-radius:999px;color:#a8e9dc;text-decoration:none;font-size:9px;font-weight:800;letter-spacing:.1em;white-space:nowrap;transition:.2s}.legal-page-link:hover{background:rgba(66,214,193,.11);border-color:rgba(66,214,193,.65);color:#e2fff8}@media(max-width:760px){.legal-page-link{font-size:8px;padding:7px 8px}.top-meta{gap:7px}}
