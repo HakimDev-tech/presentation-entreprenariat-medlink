@@ -103,3 +103,33 @@
 
 /* Link to the supplementary legal reference page */
 .legal-page-link{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;border:1px solid rgba(66,214,193,.28);border-radius:999px;color:#a8e9dc;text-decoration:none;font-size:9px;font-weight:800;letter-spacing:.1em;white-space:nowrap;transition:.2s}.legal-page-link:hover{background:rgba(66,214,193,.11);border-color:rgba(66,214,193,.65);color:#e2fff8}@media(max-width:760px){.legal-page-link{font-size:8px;padding:7px 8px}.top-meta{gap:7px}}
+
+/* Adaptive presentation: no fixed slide dimensions and no nested content scroll. */
+html,body{width:100%;height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+#deck{width:100%;min-height:100dvh;height:auto;overflow:visible}
+#stage{display:flex;flex:1 0 auto;min-height:calc(100dvh - 150px);align-items:stretch;overflow:visible}
+.slide{width:100%;height:auto;min-height:calc(100dvh - 160px);max-height:none;flex:1 0 auto;justify-content:flex-start;overflow:visible}
+.slide-body{min-height:auto;align-content:start}
+.panel{overflow:visible}
+.scroll-panel{max-height:none;height:auto;overflow:visible;overscroll-behavior:auto}
+.plan-card{height:auto;max-height:none;overflow:visible;scrollbar-width:auto}
+.plan-card h3{min-height:0}
+.plan-grid{align-items:stretch}
+.bottomline{position:sticky;bottom:0;z-index:8;min-height:54px;height:auto;padding:8px 0;background:linear-gradient(180deg,rgba(7,26,36,0),rgba(7,26,36,.96) 35%);backdrop-filter:blur(8px)}
+@media(max-width:620px){
+  .top-meta{display:flex;gap:0}
+  .top-meta>span{display:none}
+  .legal-page-link{display:inline-flex}
+  .slide{min-height:calc(100dvh - 130px);max-height:none;overflow:visible}
+  .cover-visual{display:none}
+  .cover-foot{gap:7px}
+  .cover-foot span{font-size:9px}
+  .plan-grid{grid-template-columns:1fr}
+  .plan-card{max-height:none;overflow:visible}
+}
+@media print{
+  html,body{height:auto;overflow:visible}
+  #deck{height:auto;min-height:0;overflow:visible;display:block}
+  #stage{display:block;min-height:0;overflow:visible}
+  .slide{height:auto;min-height:100vh;max-height:none;overflow:visible;page-break-after:always;break-after:page}
+}
