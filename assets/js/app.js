@@ -1,14 +1,71 @@
 const slides = [
 {section:"OUVERTURE",title:"MedLink DZ",kicker:"PROJET ENTREPRENEURIAL · ALGÉRIE",kind:"cover",content:`
 <div class="cover-layout"><div><span class="tag">SANTÉ · COORDINATION · SUIVI</span><h1 class="cover-title">MedLink <span>DZ</span></h1><p class="cover-sub">Mieux coordonner le suivi des patients après une consultation ou une hospitalisation.</p><p class="lead">Une plateforme numérique qui relie le médecin et son patient autour d'un programme de suivi clair, validé et traçable.</p><div class="cover-foot"><span>Équipe projet</span><span>Entrepreneuriat</span><span>2026</span></div></div><div class="cover-visual"><div class="orb"><i class="orb-node n1"></i><i class="orb-node n2"></i><i class="orb-node n3"></i></div><div class="orb-core">M</div></div></div>`},
-{section:"IDENTIFICATION DU PROBLÈME",title:"Le parcours ne s'arrête pas à la sortie",kicker:"01 · PROBLÈME",content:`
-<div class="slide-body cols-2"><div class="panel reveal"><div class="card-title">Le constat central</div><p class="big-quote">Après la consultation ou l'hospitalisation, le patient doit souvent poursuivre seul les consignes et les étapes de suivi.</p><div class="divider"></div><p>Le lien médecin–patient devient moins structuré : les consignes sont dispersées, les rappels dépendent de l'initiative du patient et les informations de suivi peuvent rester fragmentées.</p></div><div class="panel reveal"><div class="card-title">Un parcours en rupture</div><div class="steps"><div class="step"><div class="step-num">01</div><h3>Consultation</h3><p>Diagnostic et recommandations délivrés.</p></div><div class="step"><div class="step-num">02</div><h3>Retour à domicile</h3><p>Le patient doit retenir et appliquer les consignes.</p></div><div class="step"><div class="step-num">03</div><h3>Suivi irrégulier</h3><p>Rappels et échanges selon les moyens disponibles.</p></div><div class="step"><div class="step-num">04</div><h3>Reprise de contact</h3><p>Souvent déclenchée par une difficulté ou un besoin.</p></div></div></div></div><div class="callout footnote">Problème étudié : la continuité organisationnelle du suivi, et non le remplacement de la décision médicale.</div>`},
-{section:"IDENTIFICATION DU PROBLÈME",title:"Trois difficultés qui se renforcent",kicker:"01 · PROBLÈME",content:`
-<div class="slide-body cols-3"><div class="panel reveal"><span class="tag">PATIENT</span><h3>Consignes dispersées</h3><p>Informations reçues à différents moments et sur différents supports. Le patient peut oublier une étape, perdre un document ou ne plus savoir quand recontacter le cabinet.</p><ul><li>Manque de repères après la sortie</li><li>Rappels non systématiques</li><li>Accès variable au numérique</li></ul></div><div class="panel reveal"><span class="tag">MÉDECIN</span><h3>Suivi difficile à organiser</h3><p>Les échanges post-consultation peuvent s'accumuler sur des canaux non conçus pour structurer un programme de suivi.</p><ul><li>Sollicitations fragmentées</li><li>Visibilité limitée sur les étapes</li><li>Temps consacré à la coordination</li></ul></div><div class="panel reveal"><span class="tag">SYSTÈME</span><h3>Information cloisonnée</h3><p>Le suivi repose parfois sur des outils généralistes et des habitudes individuelles, sans espace commun de coordination.</p><ul><li>Historique éparpillé</li><li>Traçabilité hétérogène</li><li>Relais difficiles à formaliser</li></ul></div></div><div class="callout footnote">Ces difficultés décrivent le problème visé par le projet ; leur ampleur nationale doit être mesurée par une enquête représentative.</div>`},
-{section:"IDENTIFICATION DU PROBLÈME",title:"Les conséquences possibles",kicker:"01 · PROBLÈME",content:`
-<div class="slide-body cols-2"><div class="panel reveal"><div class="card-title">Pour le patient</div><div class="risk-list"><div class="risk"><i></i><p><b>Oubli ou mauvaise compréhension</b><br><span class="muted">Les consignes peuvent être mal retenues ou appliquées tardivement.</span></p></div><div class="risk"><i></i><p><b>Retard de recontact</b><br><span class="muted">Le patient ne sait pas toujours quel canal utiliser ni à quel moment.</span></p></div><div class="risk"><i></i><p><b>Expérience fragmentée</b><br><span class="muted">Documents, rendez-vous et échanges sont répartis sur plusieurs supports.</span></p></div></div></div><div class="panel reveal"><div class="card-title">Pour le professionnel</div><div class="risk-list"><div class="risk"><i></i><p><b>Interruptions répétées</b><br><span class="muted">Les demandes arrivent par téléphone, messagerie ou autres canaux.</span></p></div><div class="risk"><i></i><p><b>Suivi difficile à prioriser</b><br><span class="muted">L'information utile n'est pas toujours centralisée.</span></p></div><div class="risk"><i></i><p><b>Charge organisationnelle</b><br><span class="muted">Le temps administratif concurrence le temps médical.</span></p></div></div></div></div><div class="callout footnote">MedLink DZ cible d'abord la coordination et la visibilité du suivi. Il ne prétend pas démontrer une réduction des complications médicales.</div>`},
-{section:"IDENTIFICATION DU PROBLÈME",title:"Le problème à résoudre",kicker:"01 · PROBLÈME",content:`
-<div class="panel reveal"><span class="eyebrow">FORMULATION DU PROBLÈME</span><p class="big-quote" style="margin:14px 0 20px">Comment maintenir un suivi post-consultation organisé, compréhensible et accessible, sans ajouter une charge excessive au médecin ?</p><div class="stat-grid"><div class="stat"><strong>01</strong><span>Centraliser les consignes validées</span></div><div class="stat"><strong>02</strong><span>Rendre les étapes visibles au patient</span></div><div class="stat"><strong>03</strong><span>Donner au médecin un suivi maîtrisable</span></div></div></div><div class="slide-body cols-2" style="margin-top:14px"><div class="panel reveal"><h3>Ce que le projet doit apporter</h3><p>Un espace commun qui transforme des consignes ponctuelles en programme de suivi structuré, avec une validation médicale explicite.</p></div><div class="panel reveal"><h3>Ce que le projet ne doit pas faire</h3><p>Poser un diagnostic, prescrire, interpréter seul une urgence ou prendre une décision clinique à la place du professionnel.</p></div></div>`},
+{section:"IDENTIFICATION DU PROBLÈME",title:"Le parcours ne s'arrête pas à la sortie",kicker:"01 · PROBLÈME",content:`<div class="slide-body cols-2">
+<div class="panel reveal"><span class="tag">LE CONSTAT</span><p class="big-quote" style="margin:14px 0 16px">« La consultation se termine. L'accompagnement, lui, continue. »</p><p>Après une hospitalisation, une intervention ou un traitement, le patient doit parfois suivre plusieurs prescriptions, surveiller son état, réaliser des analyses, prendre des rendez-vous et rester en contact avec son médecin.</p><p style="margin-top:12px">Entre deux consultations, il doit garder le fil de son parcours — parfois avec l'aide de ses proches.</p></div>
+<div class="panel reveal"><div class="card-title">Un suivi qui se prolonge à domicile</div><div class="steps">
+<div class="step"><div class="step-num">01</div><h3>Retour à domicile</h3><p>Retenir les consignes et organiser les premières étapes.</p></div>
+<div class="step"><div class="step-num">02</div><h3>Période de traitement</h3><p>Respecter les prescriptions, examens et rendez-vous.</p></div>
+<div class="step"><div class="step-num">03</div><h3>Entre deux consultations</h3><p>Signaler une difficulté et savoir qui contacter.</p></div>
+<div class="step"><div class="step-num">04</div><h3>Surveillance</h3><p>Poursuivre les contrôles lorsqu'un suivi reste nécessaire.</p></div>
+</div></div></div>
+<div class="callout footnote">MedLink DZ vise à maintenir un lien organisé entre le patient, son médecin et, si celui-ci l'autorise, les membres de son équipe de suivi.</div>`},
+{section:"IDENTIFICATION DU PROBLÈME",title:"Trois difficultés qui se renforcent",kicker:"01 · PROBLÈME",content:`<div class="slide-body cols-2">
+<div class="panel reveal"><span class="tag">PROBLÈME IDENTIFIÉ</span><h3>Une coordination difficile à maintenir à domicile</h3><p>Les actions du suivi — prescriptions, rendez-vous, examens, informations sur l'évolution et demandes d'aide — peuvent être réparties entre plusieurs supports et interlocuteurs.</p><div class="divider"></div><ul>
+<li>Consignes réparties entre appels, messages et documents papier.</li>
+<li>Patient incertain du professionnel à contacter.</li>
+<li>Proches aidants manquant parfois de visibilité sur les étapes à accomplir.</li>
+<li>Médecin ne recevant pas toujours facilement les informations utiles entre les consultations.</li>
+<li>Recherche d'un professionnel ou d'une clinique disponible et proche parfois longue.</li>
+</ul></div>
+<div class="panel reveal"><span class="tag">CONTEXTE ALGÉRIEN</span><h3>Un problème à vérifier sur le terrain</h3><p>Le projet part d'une difficulté concrète d'organisation du suivi à domicile et de mise en relation. Il ne suppose ni que tous les patients rencontrent les mêmes obstacles, ni que le système de santé est dépourvu de suivi.</p><div class="divider"></div><p><b>Validation nécessaire :</b> confronter ces hypothèses aux expériences de patients, de familles, de médecins et de structures de santé.</p></div>
+</div>
+<div class="panel reveal" style="margin-top:13px"><span class="eyebrow">PROBLÉMATIQUE CENTRALE</span><p class="big-quote" style="margin:10px 0 0;font-size:clamp(17px,1.8vw,25px)">Comment assurer, en Algérie, un suivi médical plus continu et mieux coordonné à domicile, en facilitant les échanges avec le médecin sans remplacer son jugement médical ?</p></div>`},
+{section:"IDENTIFICATION DU PROBLÈME",title:"Les conséquences possibles",kicker:"01 · PROBLÈME",content:`<div class="slide-body cols-3">
+<div class="panel reveal"><span class="tag">CIBLE PRINCIPALE</span><h3>Patients vivant en Algérie</h3><p>Personnes qui rentrent à domicile après une hospitalisation ou suivent un traitement nécessitant un suivi régulier entre les consultations.</p><div class="divider"></div><b class="accent">Profils prioritaires</b><ul>
+<li><b>Post-hospitalisation / post-opératoire :</b> consignes, contrôles et organisation de soins à domicile.</li>
+<li><b>Maladies chroniques :</b> rendez-vous, examens et échanges réguliers avec le médecin.</li>
+<li><b>Après traitement :</b> surveillance et contrôles médicaux encore prévus.</li>
+</ul></div>
+<div class="panel reveal"><span class="tag">UTILISATEURS SECONDAIRES</span><h3>Proches aidants</h3><p>Membres de la famille ou aidants autorisés par le patient, qui participent à l'organisation pratique du parcours.</p><div class="divider"></div><b class="accent">Leur rôle</b><ul>
+<li>Aider à organiser les rendez-vous.</li>
+<li>Faciliter les déplacements et démarches.</li>
+<li>Suivre les rappels et les étapes prévues.</li>
+<li>Contribuer aux échanges dans les limites d'accès autorisées par le patient.</li>
+</ul></div>
+<div class="panel reveal"><span class="tag">PARTENAIRES PROFESSIONNELS</span><h3>Acteurs du suivi</h3><p>Professionnels et structures qui acceptent de participer à la coordination via la plateforme.</p><div class="divider"></div><b class="accent">Partenaires visés</b><ul>
+<li>Médecins traitants et spécialistes.</li>
+<li>Assistants médicaux et membres autorisés de l'équipe.</li>
+<li>Cabinets médicaux et cliniques.</li>
+<li>Services de santé concernés par le suivi à domicile.</li>
+</ul></div>
+</div>
+<div class="callout footnote">Le patient reste au centre du parcours ; les proches n'accèdent aux informations qu'avec une autorisation appropriée.</div>`},
+{section:"IDENTIFICATION DU PROBLÈME",title:"Le problème à résoudre",kicker:"01 · PROBLÈME",content:`<div class="slide-body cols-3">
+<div class="panel reveal"><span class="tag">LA PLATEFORME FACILITE</span><h3>Organiser et retrouver l'information</h3><ul>
+<li>Appels et messages entre patient et professionnels.</li>
+<li>Prise et organisation des rendez-vous.</li>
+<li>Rappels et suivi des échéances.</li>
+<li>Centralisation des informations communiquées.</li>
+<li>Suivi des analyses et prescriptions déclarées.</li>
+<li>Recherche de médecins et de cliniques à proximité.</li>
+</ul></div>
+<div class="panel reveal"><span class="tag">L'ASSISTANT IA PEUT</span><h3>Accompagner les étapes prévues</h3><ul>
+<li>Rappeler les étapes du programme validé par le médecin.</li>
+<li>Expliquer ou reformuler les consignes déjà définies.</li>
+<li>Recueillir les informations prévues dans le suivi.</li>
+<li>Signaler une demande hors cadre ou nécessitant un contact humain.</li>
+<li>Transmettre les éléments utiles au professionnel selon les règles établies.</li>
+</ul></div>
+<div class="panel reveal"><span class="tag">LA PLATEFORME NE DOIT PAS</span><h3>Se substituer au professionnel</h3><ul>
+<li>Poser un diagnostic.</li>
+<li>Prescrire ou modifier un traitement.</li>
+<li>Interpréter seule des résultats médicaux.</li>
+<li>Décider d'une conduite clinique.</li>
+<li>Retarder le recours aux services d'urgence.</li>
+</ul><p style="margin-top:12px"><b class="gold">Toute décision clinique relève d'un professionnel habilité.</b></p></div>
+</div>
+<div class="panel reveal" style="margin-top:13px"><div class="card-title">Formulation orale — à retenir</div><p class="big-quote" style="font-size:clamp(14px,1.35vw,18px);margin:0">« Une fois rentré chez lui, le patient doit continuer à suivre ses consignes médicales, mais la coordination entre lui, sa famille et les professionnels peut devenir difficile. MedLink DZ veut maintenir ce lien, centraliser le suivi et faciliter l'accès au bon interlocuteur, au-delà de la consultation. »</p></div>`},
 {section:"ÉTUDE DU MARCHÉ",title:"Une enquête exploratoire auprès des médecins",kicker:"02 · MARCHÉ",content:`
 <div class="slide-body cols-2"><div class="panel reveal"><div class="card-title">Objectif de l'enquête</div><p class="big-quote">Comprendre les pratiques de suivi, les canaux utilisés et les conditions d'acceptation d'un outil numérique.</p><ul><li>Observer les habitudes déclarées</li><li>Identifier les freins à l'adoption</li><li>Prioriser les exigences produit</li></ul></div><div class="panel reveal"><div class="card-title">Précaution méthodologique</div><p>Les pourcentages présentés correspondent aux réponses fournies dans le dossier de projet.</p><div class="divider"></div><p class="gold"><b>Limite documentaire :</b> taille de l'échantillon, méthode de recrutement et date de collecte non précisées.</p><p>Ces résultats sont donc exploratoires et ne représentent pas automatiquement l'ensemble des médecins algériens.</p></div></div><div class="callout footnote">L'enquête sert à orienter le prototype et à formuler des hypothèses à tester, pas à établir une statistique nationale.</div>`},
 {section:"ÉTUDE DU MARCHÉ",title:"Le suivi après la sortie reste inégal",kicker:"02 · MARCHÉ",content:`
