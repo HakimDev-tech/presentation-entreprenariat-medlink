@@ -58,11 +58,9 @@ Three.js est chargé depuis jsDelivr et les polices depuis Google Fonts. Pour un
 
 ## Déploiement GitHub Pages
 
-Le workflow `.github/workflows/deploy.yml` publie le contenu de la branche `main` sur GitHub Pages à chaque push.
+Le workflow `.github/workflows/deploy.yml` publie le contenu de la branche `main` sur GitHub Pages à chaque push. La source GitHub Pages est configurée sur **GitHub Actions**.
 
-**Activation initiale requise (une seule fois) :** ouvre [Settings → Pages](https://github.com/HakimDev-tech/presentation-entreprenariat-medlink/settings/pages), puis sélectionne **GitHub Actions** dans « Build and deployment → Source ». Le jeton de cette session ne dispose pas du droit administratif nécessaire pour créer le site Pages à ta place. Après cette activation, relance le workflow depuis **Actions → Deploy presentation to GitHub Pages → Run workflow** (ou pousse un nouveau commit). Les mises à jour suivantes seront publiées automatiquement à chaque push sur `main`.
-
-URL cible : https://hakimdev-tech.github.io/presentation-entreprenariat-medlink/
+URL publique : https://hakimdev-tech.github.io/presentation-entreprenariat-medlink/
 
 ## Périmètre et exactitude des informations
 
