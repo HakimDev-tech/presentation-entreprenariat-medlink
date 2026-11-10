@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071a24">
+  <meta name="description" content="MedLink DZ — Présentation du projet entrepreneurial.">
+  <title>MedLink DZ — Présentation entrepreneuriale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}
+  </script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <canvas id="particle-field" aria-hidden="true"></canvas>
+  <main id="deck" aria-label="Présentation MedLink DZ">
+    <div class="topline"><div class="brand"><span class="brand-mark">M</span><span>MEDLINK <b>DZ</b></span></div><div class="top-meta"><span id="section-label">PROJET ENTREPRENEURIAL</span><span class="live-dot"></span><span>PRÉSENTATION</span></div></div>
+    <section id="stage" aria-live="polite"></section>
+    <div class="bottomline">
+      <div class="progress-wrap"><div class="progress-track"><div id="progress-fill"></div></div><span id="progress-label">01 / 32</span></div>
+      <div class="controls">
+        <button id="overview-btn" class="control-btn" aria-label="Vue d'ensemble" title="Vue d'ensemble (G)">▦</button>
+        <button id="prev-btn" class="control-btn" aria-label="Diapositive précédente" title="Précédent (←)">←</button>
+        <button id="next-btn" class="next-btn" aria-label="Diapositive suivante" title="Suivant (→ / Espace)">SUIVANT <span>→</span></button>
+        <button id="fullscreen-btn" class="control-btn" aria-label="Plein écran" title="Plein écran (F)">⛶</button>
+      </div>
+    </div>
+    <div id="overview" class="overview hidden" aria-hidden="true">
+      <div class="overview-head"><div><span class="eyebrow">NAVIGATION</span><h2>Vue d'ensemble</h2></div><button id="close-overview" class="control-btn" aria-label="Fermer">✕</button></div>
+      <div id="overview-grid" class="overview-grid"></div>
+    </div>
+    <div id="help" class="help hidden"><b>Raccourcis clavier</b><span>← → naviguer</span><span>Espace suivant</span><span>F plein écran</span><span>G vue d'ensemble</span><span>Home / End début / fin</span><button id="close-help">Fermer</button></div>
+  </main>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
