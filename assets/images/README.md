@@ -1,14 +1,15 @@
 # Images de la présentation MedLink DZ
 
-Les images intégrées dans la présentation sont stockées dans ce dossier (respecter exactement la casse et les accents) :
+Les images intégrées dans la présentation sont stockées dans ce dossier (respecter exactement la casse et les extensions) :
 
-- `interface.PNG` — interface d'accueil, utilisée pour présenter la plateforme.
-- `espacepro.PNG` — espace professionnel et dépôt des justificatifs.
+- `interface.PNG` — interface d'accueil.
+- `espacepro.PNG` — espace professionnel.
 - `inscription.PNG` — création d'un compte patient.
 - `fonctionnalités.PNG` — préférences et canaux de notification.
+- `IMG1.jpg` — visuel complémentaire de la diapositive technique.
 
-Le cinquième fichier annoncé, `IMG1.PNG`, n'a pas été trouvé dans le dépôt. Un emplacement réservé est visible sur la diapositive technique. Il faudra ajouter le fichier puis l'associer à cet emplacement après avoir vérifié son contenu.
+Le fichier présent dans le dépôt s'appelle exactement `IMG1.jpg` (extension `.jpg` en minuscules), et non `IMG1.JPG`. Le chemin de la présentation utilise le nom réellement présent.
 
-Les conteneurs d'image ont une hauteur définie par la présentation. Les fichiers sont ajustés à l'intérieur avec `object-fit: contain` : leur rapport d'aspect est conservé, aucun recadrage ni étirement n'est appliqué et leurs dimensions intrinsèques ne modifient pas la mise en page.
+Les conteneurs gardent leurs dimensions propres. Les images sont ajustées à l'intérieur avec `object-fit: contain` : proportions conservées, sans recadrage ni étirement.
 
 Pour toute capture destinée à une présentation publique, utiliser des données fictives ou anonymisées, sans données médicales personnelles réelles.
