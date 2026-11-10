@@ -1,5 +1,3 @@
-import * as THREE from "three";
-
 const slides = [
 {section:"OUVERTURE",title:"MedLink DZ",kicker:"PROJET ENTREPRENEURIAL · ALGÉRIE",kind:"cover",content:`
 <div class="cover-layout"><div><span class="tag">SANTÉ · COORDINATION · SUIVI</span><h1 class="cover-title">MedLink <span>DZ</span></h1><p class="cover-sub">Mieux coordonner le suivi des patients après une consultation ou une hospitalisation.</p><p class="lead">Une plateforme numérique qui relie le médecin et son patient autour d'un programme de suivi clair, validé et traçable.</p><div class="cover-foot"><span>Équipe projet</span><span>Entrepreneuriat</span><span>2026</span></div></div><div class="cover-visual"><div class="orb"><i class="orb-node n1"></i><i class="orb-node n2"></i><i class="orb-node n3"></i></div><div class="orb-core">M</div></div></div>`},
@@ -130,6 +128,7 @@ resizeCanvas();drawParticles();window.addEventListener("resize",resizeCanvas);
 
 // Three.js WebGL hero object: gracefully falls back to CSS orbit if WebGL is unavailable.
 (async()=>{try{
+ const THREE = await import("three");
  const host=document.createElement("div");host.className="three-host";document.querySelector("#deck").appendChild(host);
  const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:"low-power"});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setSize(host.clientWidth||innerWidth,host.clientHeight||innerHeight);host.appendChild(renderer.domElement);
  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(38,(host.clientWidth||innerWidth)/(host.clientHeight||innerHeight),.1,100);camera.position.z=7;
