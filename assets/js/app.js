@@ -130,7 +130,7 @@ resizeCanvas();drawParticles();window.addEventListener("resize",resizeCanvas);
 
 // Three.js WebGL hero object: gracefully falls back to CSS orbit if WebGL is unavailable.
 (async()=>{try{
- const host=document.createElement("div");host.className="three-host";document.querySelector("#stage").appendChild(host);
+ const host=document.createElement("div");host.className="three-host";document.querySelector("#deck").appendChild(host);
  const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:"low-power"});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setSize(host.clientWidth||innerWidth,host.clientHeight||innerHeight);host.appendChild(renderer.domElement);
  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(38,(host.clientWidth||innerWidth)/(host.clientHeight||innerHeight),.1,100);camera.position.z=7;
  const group=new THREE.Group();scene.add(group);
