@@ -91,3 +91,11 @@
   .plan-card h3{min-height:0}
   .image-slot img{max-height:190px}
 }
+
+
+/* Présentation détaillée des abonnements : sections fonctionnelles lisibles. */
+.plan-section{margin-top:10px;padding-top:9px;border-top:1px solid rgba(183,225,225,.12)}
+.plan-section> b{display:block;color:var(--mint);font:700 10px Manrope,sans-serif;letter-spacing:.04em;margin-bottom:4px}
+.plan-card .plan-section ul{margin:4px 0 0;padding-left:15px;font-size:clamp(10px,.78vw,11.5px);line-height:1.42}
+.plan-card .plan-section li{margin:3px 0}
+.plan-card .plan-section li b{color:#e1f2ef}
