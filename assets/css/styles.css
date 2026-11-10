@@ -133,3 +133,120 @@ html,body{width:100%;height:auto;min-height:100%;overflow-x:hidden;overflow-y:au
   #stage{display:block;min-height:0;overflow:visible}
   .slide{height:auto;min-height:100vh;max-height:none;overflow:visible;page-break-after:always;break-after:page}
 }
+
+
+/* Mobile-first finishing pass: readable type, reachable controls, no clipped content. */
+@media(max-width:620px){
+  html,body{width:100%;min-width:320px;overflow-x:hidden;overflow-y:auto}
+  #deck{
+    width:100%;
+    min-height:100dvh;
+    height:auto;
+    padding:12px 12px calc(88px + env(safe-area-inset-bottom));
+    overflow:visible;
+  }
+  .topline{
+    position:relative;
+    min-height:38px;
+    align-items:center;
+    gap:8px;
+  }
+  .brand{font-size:12px;letter-spacing:.08em}
+  .brand-mark{width:28px;height:28px}
+  .top-meta{
+    display:flex;
+    flex:1;
+    justify-content:flex-end;
+    min-width:0;
+    gap:0;
+  }
+  .top-meta>span{display:none!important}
+  .legal-page-link{
+    display:inline-flex!important;
+    max-width:100%;
+    white-space:nowrap;
+    font-size:8px;
+    padding:7px 8px;
+  }
+  #stage{
+    width:100%;
+    min-height:0;
+    height:auto;
+    padding:10px 0 18px;
+    overflow:visible;
+  }
+  .slide{
+    width:100%;
+    min-width:0;
+    height:auto;
+    min-height:0;
+    max-height:none;
+    padding:8px 1px 22px;
+    overflow:visible;
+    gap:14px;
+  }
+  .slide-head{width:100%;gap:8px;margin-bottom:12px}
+  .slide h1{font-size:clamp(27px,7.2vw,36px);line-height:1.12;overflow-wrap:anywhere}
+  .slide h2{font-size:clamp(22px,6vw,29px);line-height:1.18;overflow-wrap:anywhere}
+  .slide h3{font-size:clamp(16px,4.6vw,20px);line-height:1.25}
+  .slide p,.slide li{font-size:13px;line-height:1.58}
+  .lead{font-size:13px;line-height:1.55}
+  .cover-layout{grid-template-columns:minmax(0,1fr)}
+  .cover-title{font-size:clamp(39px,12vw,54px)!important;line-height:.98;overflow-wrap:anywhere}
+  .cover-visual{display:none!important}
+  .cover-foot{flex-wrap:wrap;gap:8px}
+  .cover-foot span{font-size:9px;line-height:1.4}
+  .cols-2,.cols-3,.cols-4,.plan-grid,.two-tier,.legal-grid{grid-template-columns:minmax(0,1fr)}
+  .stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .panel,.plan-card{width:100%;min-width:0;height:auto;max-height:none;overflow:visible;padding:13px}
+  .scroll-panel{width:100%;max-height:none;height:auto;overflow:visible;padding-right:0}
+  .image-slot{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:16/10}
+  .image-slot img{width:100%;height:100%;max-height:none;object-fit:contain}
+  .bar-row{grid-template-columns:minmax(68px,85px) minmax(0,1fr) 32px}
+  .flow{flex-direction:column;align-items:stretch}
+  .flow-arrow{transform:rotate(90deg);align-self:center}
+  .bottomline{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    min-height:64px;
+    height:auto;
+    padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    background:rgba(5,20,29,.97);
+    border-top:1px solid rgba(130,220,210,.18);
+    backdrop-filter:blur(14px);
+    z-index:100;
+  }
+  .progress-wrap{min-width:0;gap:6px}
+  .progress-track{width:52px}
+  #progress-label{font-size:9px;white-space:nowrap}
+  .controls{display:flex;gap:5px;align-items:center}
+  .control-btn,.next-btn{min-width:36px;height:36px}
+  .next-btn{padding:0 10px;font-size:9px;white-space:nowrap}
+  .overview{position:fixed;inset:0;z-index:120;padding:18px 12px}
+  .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .overview-card{min-width:0;overflow-wrap:anywhere}
+  .help{position:fixed;left:12px;right:12px;bottom:78px;z-index:110}
+}
+@media(max-width:360px){
+  #deck{padding-left:10px;padding-right:10px}
+  .brand{font-size:10px}
+  .legal-page-link{font-size:7px;padding:6px}
+  .progress-track{width:38px}
+  .next-btn{padding:0 7px;font-size:8px}
+  .control-btn,.next-btn{min-width:32px;height:34px}
+  .slide h1{font-size:26px}
+  .slide h2{font-size:21px}
+  .cover-title{font-size:38px!important}
+  .stat-grid,.steps{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  #particle-field,.three-host{display:none!important}
+}
