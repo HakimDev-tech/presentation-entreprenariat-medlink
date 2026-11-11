@@ -130,7 +130,7 @@ const slides = [
       <li>Projet : nom, secteur, description courte (400 caractères maximum), présentation détaillée et aspects d’innovation.</li>
       <li><b>Pitch deck :</b> utiliser le modèle « Projet innovant » téléchargeable sur Startup.dz.</li>
       <li>Avancement, modèle économique (B2B, B2C, B2G ou autre) et adresse du site web, si disponible.</li>
-      <li>Selon la situation : attestation d’incubation, inscription liée à la décision ministérielle n° 1275, justificatifs de propriété intellectuelle, concours et récompenses.</li>
+      <li>Selon le cas : preuve qu’au moins la moitié des membres du projet sont titulaires d’un doctorat, attestation d’incubation délivrée par un incubateur labellisé, preuve de concept ou prototype, titres de propriété intellectuelle et prix/récompenses. Le portail demande aussi des informations sur l’accompagnement et l’inscription éventuelle au titre de la décision ministérielle n° 1275.</li>
     </ul>
   </div>
   <div class="panel reveal">
